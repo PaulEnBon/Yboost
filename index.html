@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yboost - API Pokémons</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0b1020;
+      --card: #121a33;
+      --text: #f4f7ff;
+      --muted: #b7c0dd;
+      --accent: #6ea8fe;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 760px;
+      background: var(--card);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    code {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+
+    ul {
+      line-height: 1.8;
+      padding-left: 20px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Yboost - API Pokémons</h1>
+    <p>
+      Cette page est affichée par <strong>GitHub Pages</strong>. L’API Express fonctionne en local ou sur un hébergement Node.js.
+    </p>
+
+    <h2>Endpoints API</h2>
+    <ul>
+      <li><code>GET /api/pokemons</code> - Liste des Pokémons</li>
+      <li><code>GET /api/pokemons/:id</code> - Pokémon par ID</li>
+      <li><code>GET /api/pokemons/:id/:name</code> - Pokémon par ID + nom</li>
+    </ul>
+
+    <h2>Local</h2>
+    <ul>
+      <li>Démarrer le serveur : <code>npm start</code></li>
+      <li>Tester la liste : <a href="http://localhost:3000/api/pokemons">http://localhost:3000/api/pokemons</a></li>
+    </ul>
+
+    <p>
+      Voir la documentation complète : <a href="./README.md">README</a>
+    </p>
+  </main>
+</body>
+</html>
