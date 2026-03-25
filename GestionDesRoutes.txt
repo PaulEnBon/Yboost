@@ -1,0 +1,17 @@
+
+// parameter
+app.get('/api/pokemons/:id', (req, res) => {
+    const id = req.params.id;
+    res.send(`<h3>About Pokemon ${id} !</h3>`);
+});
+// parameters
+app.get('/api/pokemons/:id/:name', (req, res) => {
+    //
+    const id = req.params.id;
+    const name = req.params.name;
+    //
+    res.send(`<h3>About Pokemon ${id} : ${name} !</h3>`);
+});
+
+
+
